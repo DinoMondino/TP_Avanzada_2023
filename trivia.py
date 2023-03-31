@@ -1,4 +1,4 @@
-from funciones_peli import opcion1,opcion2
+from funciones2 import opcion1,opcion2
 five = "false"
 while five == "false":
      with open ("opciones.txt", "a") as opc:
