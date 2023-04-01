@@ -42,4 +42,6 @@ Para google, en el gráfico se observa que el mínimo se encuentra en un valor d
 Por lo que el valor obtenido de 65% de repunte resulta ligeramente mayor al valor aproximado de la gráfica (50%).
 """
 
-#falta mathplotlib
+grafica("google")
+grafica("nike")
+superposicion()
