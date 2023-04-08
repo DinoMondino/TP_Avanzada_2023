@@ -1,0 +1,56 @@
+<!doctype html>
+<html>
+
+<head>
+    <title>Trivia de peliculas</title>
+
+<style>
+.button {
+  border: none;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  cursor: pointer;
+}
+
+.button1 {background-color: #4CAF50;} /* Green */
+.button2 {background-color: #008CBA;} /* Blue */
+</style>
+
+</head>
+<body style="background-color:black;">
+
+<img src="">
+
+<h1 style="color:white;">Trivia de peliculas</h1>
+
+<hr>
+
+<form id="Nombre_form" action="/juego">
+  <fieldset>
+    <legend>Datos</legend>
+
+    <input style="color:black;" type="text" placeholder="Nombre" name="nombre">Nombre<br /><br />
+    
+    <form action="/juego" method="POST">
+        <button class="button button1" type="submit">Empezar</button>
+    </form>
+    <form action="/results" method="POST">
+        <button class="button button2" type="submit">Ver resultados</button>
+    </form>
+  </fieldset>
+</form>
+
+<p style="background-color:white;">
+Instrucciones: 
+Al comenzar el juego se le mostrará una frase entre "" de una pelicula, y tres titulos de peliculas.
+Usted deberá seleccionar con un clic la opción que corresponda a la frase.
+</p>
+
+</body>
+
+</html>
