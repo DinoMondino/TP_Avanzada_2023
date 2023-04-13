@@ -41,3 +41,4 @@ def opcion2():
         print("Correctou")
     else:
         print("Incorrecto")
+    return matriz
