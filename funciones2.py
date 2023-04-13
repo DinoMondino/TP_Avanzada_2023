@@ -27,18 +27,33 @@ def opcion2():
         lista2.append(z) 
     lista2 = list(set(lista2))
 #Se escoge una frase random y se muestra
-    indice_f=random.randint(0,55)
-    print(matriz[indice_f][0])
-    print("A que pelicula pertence esta frase?")
-#utilizar la lista2 baja las posibilidades de que se repita la misma pelicula en las opciones
-    lista= [matriz[indice_f][1],lista2[random.randint(0,53)],lista2[random.randint(0,53)]]
+    indice_f: = random.randint(0,55)
+    resp = matriz[indice_f][1]
+    op1 = random.choice(lista2)
+    op2 = random.choice(lista2)
+    lista= [resp,op1,op2]
     random.shuffle(lista)
-    print("1)",lista[0])
-    print("2)",lista[1])
-    print("3)",lista[2])
-    respuesta=input()
-    if respuesta in matriz[indice_f][1]:
-        print("Correctou")
-    else:
-        print("Incorrecto")
+    while op1 != op2:
+        print(matriz[indice_f][0])
+        print("A que pelicula pertence esta frase?")
+        print("1)",lista[0])
+        print("2)",lista[1])
+        print("3)",lista[2])
+        break
+        respuesta=input()
+    if respuesta == "1"
+        if lista [0] == resp
+            print("¡Felicitaciones! La respuesta es correcta.")
+        else: 
+            print("Respuesta incorrecta.")
+    if respuesta == "2"
+        if lista [1] == resp
+            print("¡Felicitaciones! La respuesta es correcta.")
+        else: 
+            print("Respuesta incorrecta.")
+    if respuesta == "3"
+        if lista [2] == resp
+            print("¡Felicitaciones! La respuesta es correcta.")
+        else: 
+            print("Respuesta incorrecta.")
     return matriz
